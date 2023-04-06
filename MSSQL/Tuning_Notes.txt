@@ -1,0 +1,29 @@
+    sp_helpindex <table> - Displays index information for a specific table.
+    DBCC SHOWCONTIG (<table>) - Displays fragmentation information for a specific table.
+    ALTER INDEX <index_name> ON <table_name> REBUILD - Rebuilds an index to improve performance.
+    CREATE STATISTICS <statistic_name> ON <table_name> (<column_name>) - Creates statistics on a column to improve query optimization.
+    SET STATISTICS IO ON - Displays input/output statistics for a query to identify performance issues.
+    SET STATISTICS TIME ON - Displays query execution time statistics to identify performance issues.
+    SET NOCOUNT ON - Prevents the display of messages indicating the number of rows affected by a query to improve performance.
+    SET TRANSACTION ISOLATION LEVEL READ UNCOMMITTED - Allows reading of uncommitted data to improve query performance.
+    ALTER TABLE <table_name> ADD <column_name> <data_type> DEFAULT <default_value> - Adds a default value to a column to improve query performance.
+    ALTER TABLE <table_name> ALTER COLUMN <column_name> <new_data_type> - Changes the data type of a column to improve performance.
+    SELECT <columns> FROM <table_name> WITH (NOLOCK) - Uses the NOLOCK hint to improve query performance.
+    CREATE NONCLUSTERED INDEX <index_name> ON <table_name> (<column_name>) INCLUDE (<included_column>) - Creates a non-clustered index to improve performance for a specific query.
+    EXEC sp_recompile <table_name> - Forces a recompilation of a stored procedure to improve performance.
+    UPDATE STATISTICS <table_name> <index_name> - Updates statistics for a specific index to improve performance.
+    DBCC DROPCLEANBUFFERS - Clears the buffer cache to improve query performance.
+    DBCC FREEPROCCACHE - Clears the procedure cache to improve query performance.
+    sp_recompile <table_name> - Forces recompilation of stored procedures to improve performance.
+    sp_recompile <view_name> - Forces recompilation of views to improve performance.
+    sp_updatestats - Updates statistics for all tables and indexes to improve query optimization.
+    EXEC sp_msforeachtable 'UPDATE STATISTICS ?' - Updates statistics for all tables and indexes to improve query optimization.
+    ALTER DATABASE <database_name> SET PARAMETERIZATION FORCED - Forces parameterization of SQL queries to improve performance.
+    SET ARITHABORT ON - Ensures the correct handling of arithmetic overflow errors to improve query performance.
+    SET ANSI_WARNINGS ON - Ensures that the database engine raises warnings for certain conditions to improve query performance.
+    ALTER INDEX <index_name> ON <table_name> REORGANIZE - Reorganizes an index to improve performance.
+    ALTER DATABASE <database_name> SET READ_COMMITTED_SNAPSHOT ON - Enables read-committed snapshot isolation to improve performance.
+    ALTER DATABASE <database_name> SET ALLOW_SNAPSHOT_ISOLATION ON - Enables snapshot isolation to improve performance.
+    DBCC SHRINKDATABASE (<database_name>) - Shrinks the database to improve performance.
+    DBCC SHRINKFILE (<logical_file_name>, <size>) - Shrinks the transaction log file to improve performance.
+    ALTER INDEX <index_name> ON <table_name> REBUILD WITH (ONLINE = ON) - Rebuilds an index
